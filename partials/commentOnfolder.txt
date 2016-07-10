@@ -1,0 +1,1 @@
+Folder is used for storing head, body and other elements that are going to be used throughout the app

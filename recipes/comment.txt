@@ -1,0 +1,2 @@
+Folder that stores all the features of the app.
+The name of the folder depends on the project
