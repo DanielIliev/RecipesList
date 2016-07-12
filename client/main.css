@@ -1,1 +1,52 @@
-/* CSS declarations go here */
+html, body {
+	margin: 0;
+	padding-bottom: 1em;
+	background: url(http://www.tubkaakresort.com/images/slide-cooking-class01.jpg) no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+.new-recipe {
+	background-color: #FFF;
+	border: 5px solid #829500;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border-radius: 10px 10px 10px 10px;
+}
+.navbar {
+	background-color: #829500;
+	border: none;
+}
+.navbar-brand {
+	color: #FFF !important;
+}
+li a {
+	color: #FFF !important;
+}
+.btn {
+	color: #000;
+}
+.navbar-toggle {
+	border: none;
+}
+.panel-heading {
+	background-color: #829500 !important;
+	font-size: 20px;
+}
+.btn-primary, .btn-primary:focus {
+	background-color: #829500;
+	border: none;
+}
+.btn-primary:hover {
+	background-color: #28400C;
+}
+.btn-primary:active {
+	background-color: #87AC3A !important;
+}
+@media screen and (max-width:800px) {
+	.new-recipe {
+		border: 0;
+		-moz-border-radius: 0;
+		-webkit-border-radius: 0;
+		border-radius: 0;
+	}
+}

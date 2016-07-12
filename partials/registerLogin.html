@@ -1,0 +1,78 @@
+<template name="register">
+	<div class="modal fade" id="registerModal" tabindex="-1"
+	role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<h4 class="modal-title" id="myModalLabel">Register</h4>
+				</div>
+			<div class="modal-body">
+				<form>
+					<fieldset class="form-group">
+						<label for="username">Username: </label>
+						<input type="text" class="form-control"
+							id="register-username" placeholder="Enter username"
+							autocomplete="off" required/>
+						<br>
+						<label for="email">Email: </label>
+						<input type="email" class="form-control"
+							id="register-email" placeholder="Enter email"
+							autocomplete="off" required/>
+						<br>
+						<label for="password">Password: </label>
+						<input type="password" class="form-control"
+							id="register-password" placeholder="Enter password"
+							autocomplete="off" required/>
+						<small class="text-muted">We'll never share your account details</small>
+					</fieldset>
+					<input type="submit" class="btn btn-primary" value="Register" />
+				</form>
+			</div>
+			<div class="modal-footer">&nbsp;</div>
+			</div>
+		</div>
+	</div>
+</template>
+<template name="login">
+	<div class="modal fade" id="loginModal" tabindex="-1"
+	role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<h4 class="modal-title" id="myModalLabel">Login</h4>
+				</div>
+				<div class="modal-body">
+					<form>
+						<fieldset class="form-group">
+							<label for="username">Username: </label>
+							<input type="text" class="form-control"
+							id="login-username" placeholder="Enter username"
+							autocomplete="off" required/>
+							<br>
+							<label for="password">Password: </label>
+							<input type="password" class="form-control"
+							id="login-password" placeholder="Enter password"
+							autocomplete="off" required/>
+							<small class="text-muted">We'll never share your account details</small>
+						</fieldset>
+						<input type="submit" class="btn btn-primary" value="Login" />
+					</form>
+				</div>
+				<div class="modal-footer">&nbsp;</div>
+			</div>
+		</div>
+	</div>
+</template>
+<template name="logout">
+	<li>
+		<a href="#" id="logout">
+			<i class="fa fa-power-off"></i> Logout
+		</a>
+	</li>
+</template>

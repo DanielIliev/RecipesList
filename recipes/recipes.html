@@ -1,0 +1,7 @@
+<template name="Recipes">
+	{{#if currentUser}}
+		{{> newRecipe}}
+	{{else}}
+		{{> notLogged}}
+	{{/if}}
+</template>
