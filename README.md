@@ -3,12 +3,12 @@
 ###Recepies listing app written in MeteorJS, Blaze and Spacebars with the use of other additional packages
 
 ##Requirements
-  ###Meteor version 1.3 or newer
-  ###Node JS version 5.7 or newer
-  ###Works best on:
-  ####Opera version 38 or newer
-  ####Firefox version 47 or newer
-  ####Chrome version 51 or newer
+###Meteor version 1.3 or newer
+###Node JS version 5.7 or newer
+###Works best on:
+####Opera version 38 or newer
+####Firefox version 47 or newer
+####Chrome version 51 or newer
   
 ##Usage: 
 
