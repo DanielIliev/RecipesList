@@ -1,6 +1,6 @@
-# RecipesList
+#RecipesList
 ##Description:
-###Recepies listing app written in MeteorJS, Blaze and Spacebars with the use of other additional packages
+###Recipes listing app written in MeteorJS, Blaze and Spacebars with the use of other additional packages
 
 ##Requirements
 ###Meteor version 1.3 or newer
