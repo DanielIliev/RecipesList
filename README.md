@@ -9,6 +9,7 @@
 ####Opera version 38 or newer
 ####Firefox version 47 or newer
 ####Chrome version 51 or newer
+####May be unstable under other browsers
   
 ##Usage: 
 
