@@ -1,7 +1,26 @@
 <template name="Recipes">
-	{{#if currentUser}}
+	{{#if $.Session.get 'newRecipe'}}
 		{{> newRecipe}}
 	{{else}}
-		{{> notLogged}}
+		<div class="container">
+			<br>
+			<button class="btn btn-primary toggle-new-recipe">
+				New Recipe
+			</button>
+			<button type="button" class="btn btn-primary pull-right"
+			data-toggle="collapse" data-target="#menu">View Recipes</button>
+		</div>
 	{{/if}}
+	<section class="recipes">
+		<div id="menu" class="collapse">
+			<br>
+			{{#if Template.subscriptionsReady}}
+				{{#each recipes}}
+					{{> Recipe}}
+				{{/each}}
+			{{else}}
+				<h3>Loading...</h3>
+			{{/if}}
+		</div>
+	</section>
 </template>

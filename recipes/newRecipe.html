@@ -1,7 +1,14 @@
 <template name="newRecipe">
-	<div class="container new-recipe">
-		<h2>Add new recipe</h2>
-		<br>
-		{{> quickForm collection="Recipes" id="insertRecipeForm" type="insert" class="new-recipe-form"}}
+	<div class="new-recipe">
+		<div class="container">
+			<span><h3>Add New Recipe</h3><i class="fa fa-close btn btn-danger pull-right"></i></span>
+			<br>
+			{{#autoForm collection="Recipes" id="insertRecipeForm" type="insert" class="new-recipe-form"}}
+				{{> afQuickFields}}
+				<input class="btn btn-primary" type="submit" value="Add Recipe" />
+				<button type="button" class="btn btn-primary pull-right"
+				data-toggle="collapse" data-target="#menu">View Recipes</button>
+			{{/autoForm}}
+		</div>
 	</div>
 </template>

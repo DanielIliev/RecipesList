@@ -1,52 +1,63 @@
-html, body {
-	margin: 0;
-	padding-bottom: 1em;
+html {
 	background: url(http://www.tubkaakresort.com/images/slide-cooking-class01.jpg) no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
 }
-.new-recipe {
+body {
 	background-color: #FFF;
-	border: 5px solid #829500;
-	-moz-border-radius: 10px 10px 10px 10px;
-	-webkit-border-radius: 10px 10px 10px 10px;
-	border-radius: 10px 10px 10px 10px;
+	background-color: rgba(255,255,255,0.6);
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+	min-height: 100vh;
 }
-.navbar {
-	background-color: #829500;
-	border: none;
+.new-recipe, .menu, .shopping-list {
+	padding: 1em;
+	border-top: 1px solid #CCC;
 }
-.navbar-brand {
-	color: #FFF !important;
+.menu, .shopping-list {
+	min-height: 100vh;
 }
-li a {
-	color: #FFF !important;
+.menu-item, .shopping-list-item {
+	border-top: 1px solid #CCC;
 }
-.btn {
+.inMenu {
+	background-color: #DDD;
+	background-color: rgba(221,221,221,0.6);
+}
+.navbar-default {
+	background-color: #FFCF79;
+	border-color: transparent;
+	border-radius: 0;
+	margin: 0;
+}
+.navbar-default .navbar-brand {
+	color: #FFF;
+}
+.navbar-default .navbar-brand:hover {
 	color: #000;
 }
-.navbar-toggle {
-	border: none;
+.navbar-default .navbar-nav li a {
+	color: #FFF;
 }
-.panel-heading {
-	background-color: #829500 !important;
+.navbar-default .navbar-toggle {
+	border-color: transparent;
+}
+.navbar-default .navbar-toggle:hover {
+	background-color: #000;
+}
+.navbar-default .navbar-toggle:focus {
+	background-color: transparent;
+}
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: #fff;
+}
+.panel .panel-heading {
+	background-color: #FFCF79;
 	font-size: 20px;
+	color: #FFF;
 }
-.btn-primary, .btn-primary:focus {
-	background-color: #829500;
-	border: none;
-}
-.btn-primary:hover {
-	background-color: #28400C;
-}
-.btn-primary:active {
-	background-color: #87AC3A !important;
-}
-@media screen and (max-width:800px) {
-	.new-recipe {
-		border: 0;
-		-moz-border-radius: 0;
-		-webkit-border-radius: 0;
-		border-radius: 0;
+@media screen and (max-width: 800px) {
+	.navbar-default {
+		margin: 0;
 	}
 }

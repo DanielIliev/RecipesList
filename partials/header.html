@@ -9,12 +9,17 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a href="#" class="navbar-brand">Recipes</a>
+				<a href="/" class="navbar-brand">Recipes</a>
 			</div>
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="navMenu">
 				<ul class="nav navbar-nav navbar-right">
 					{{#if currentUser}}
+						<li>
+							<a href="#">
+								Welcome, {{currentUser.username}}
+							</a>
+						</li>
 						<li>
 							<a href="/recipe-book">
 								<i class="fa fa-list"></i> Recipe Book
@@ -33,13 +38,13 @@
 						{{>logout}}
 					{{else}}
 						<li>
-							<a href="#" class="btn btn-primary btn-lg" data-toggle="modal"
+							<a href="#" data-toggle="modal"
 							data-target="#registerModal">
 								<i class="fa fa-users"></i> Register
 							</a>
 						</li>
 						<li>
-							<a href="#" class="btn btn-primary btn-lg" data-toggle="modal"
+							<a href="#" data-toggle="modal"
 							data-target="#loginModal">
 								<i class="fa fa-user"></i> Login
 							</a>

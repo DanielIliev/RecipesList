@@ -1,12 +1,11 @@
 <template name="homeLayout">
 	{{> header}}
 	<main>
-		{{#if currentUser}}
-			<div class="jumbotron">
-				<h2>Organize your meals</h2>
+		<div class="new-recipe">
+			<div class="container">
+				<h2>The recipe book</h2>
+				<p>Here you can organize your recipes</p>
 			</div>
-		{{else}}
-			{{> notLogged}}
-		{{/if}}
+		</div>
 	</main>
 </template>

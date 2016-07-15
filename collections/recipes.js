@@ -3,6 +3,9 @@ Recipes = new Mongo.Collection('recipes');
 Recipes.allow({
 	insert: function(userId, doc) {
 		return !!userId; //If user id exists you're allowed to add recipe
+	},
+	update: function(userId, doc) {
+		return !!userId; //If user id exists you're allowed to update Menu with recipe
 	}
 });
 
@@ -54,6 +57,19 @@ RecipeSchema = new SimpleSchema({
 		autoform: {
 			type: "hidden"
 		}
+	}
+});
+
+Meteor.methods({
+	toggleMenuItem: function(id, currentState) {
+		Recipes.update(id, {
+			$set: {
+				inMenu: !currentState
+			}
+		});
+	},
+	deleteRecipe: function(id) {
+		Recipes.remove(id);
 	}
 });
 

@@ -12,6 +12,8 @@ if (Meteor.isClient) {
 			}, function(err) {
 				if (err) {
 					throw new Meteor.error(err);
+				} else {
+
 				}
 			});
 			$('#registerModal').modal('hide');
